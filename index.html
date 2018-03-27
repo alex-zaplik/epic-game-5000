@@ -277,10 +277,10 @@
         if (level.index < targetLevel) {
             collision(screen.xPos, screen.zPos, level.cubes);
 
-            if (right && screen.xPos < level.levelWidth / 1.1)
+            if (right && screen.xPos < level.levelWidth / 2.1)
                 screen.xPos = screen.xPos + level.baseSpeed;
 
-            if (left && screen.xPos > -level.levelWidth / 1.1)
+            if (left && screen.xPos > -level.levelWidth / 2.1)
                 screen.xPos = screen.xPos - level.baseSpeed;
 
             level.score = level.score + level.speed;
